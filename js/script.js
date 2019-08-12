@@ -1,20 +1,19 @@
-var  text = prompt ("Identify the longest of the three names: Madison, Grant, or Bill?");
-const name1 = 'Madison';
-const name2 = 'Grant';
-const name3 = 'Bill';
+const name1 =prompt('enter name 1.');
+const name2 =prompt('enter name 2.');
+const name3 =prompt('enter name 3.');
 
-
-if (text === name1) {
-console.log ( "Madison is the longest name.");
-}else if (text === name2) {
-    console.log ("Madison is a longer name than Grant.");
-} else if (text === name3){
-    console.log ("Madison is a longer name than Bill.");
-} else {
-    console.log ("Please enter Madison, Grant, or Bill");
+if ((name1.length  > name2.length) && (name1.length > name3.length)) {
+    console.log(`${name1} is a longer name than ${name2} and ${name3}.`);
 }
-
-
+if ((name2.length  > name1.length) && (name2.length > name3.length)) {
+    console.log(`${name2} is a longer name than ${name1} and ${name3}.`);
+}
+if ((name3.length  > name1.length) && (name3.length > name2.length)) {
+    console.log(`${name3} is a longer name than ${name1} and ${name2}.`);
+} 
+if ((name1.length === name2.length) && (name1.length === name3.length)) {
+    console.log(`${name1}, ${name2}, and ${name3} are the same length.`);
+};
 
 
 
